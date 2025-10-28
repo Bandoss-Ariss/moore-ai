@@ -60,18 +60,8 @@ export function ServerScheduleDialog({ open, onOpenChange }: ServerScheduleDialo
                 </div>
               </div>
               
-              <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
-                <p className="text-sm text-blue-800 font-medium mb-1">
-                  ℹ️ Information
-                </p>
-                <p className="text-sm text-blue-700">
-                  Les fonctionnalités de traduction et synthèse vocale seront disponibles dès que le serveur sera remis en ligne.
-                </p>
-              </div>
-              
-              <p className="text-xs text-gray-500 text-center">
-                Nous vous remercions de votre patience.
-              </p>
+            
+        
             </div>
           </AlertDialogDescription>
         </AlertDialogHeader>
