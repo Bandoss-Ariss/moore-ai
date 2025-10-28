@@ -29,7 +29,7 @@ export function ServerScheduleDialog({ open, onOpenChange }: ServerScheduleDialo
               <Server className="h-6 w-6 text-blue-600" />
             </div>
             <AlertDialogTitle className="text-xl font-bold text-gray-900">
-              Prochaine Disponibilité des Serveurs
+              Serveur présentement indisponible revenez prochainement pour vérifier la disponibilité
             </AlertDialogTitle>
           </div>
           
@@ -37,7 +37,7 @@ export function ServerScheduleDialog({ open, onOpenChange }: ServerScheduleDialo
             <div className="flex items-center gap-2 text-blue-600 bg-blue-50 p-3 rounded-lg">
               <Calendar className="h-5 w-5 flex-shrink-0" />
               <span className="font-medium">
-                Les serveurs seront disponibles prochainement
+                Serveur actuellement indisponible
               </span>
             </div>
             
@@ -49,31 +49,28 @@ export function ServerScheduleDialog({ open, onOpenChange }: ServerScheduleDialo
                 </span>
               </div>
               
-              <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+              <div className="bg-red-50 p-4 rounded-lg border border-red-200">
                 <div className="text-center space-y-2">
-                  <p className="text-lg font-bold text-green-800">
-                    📅 23 Octobre 2025
+                  <p className="text-lg font-bold text-red-800">
+                    ⚠️ Service temporairement indisponible
                   </p>
-                  <p className="text-xl font-bold text-green-700">
-                    🕙 10h00 - 18h00 GMT
-                  </p>
-                  <p className="text-sm text-green-600 font-medium">
-                    (8 heures de disponibilité)
+                  <p className="text-sm text-red-600 font-medium">
+                    Veuillez revenir ultérieurement
                   </p>
                 </div>
               </div>
               
-              <div className="bg-orange-50 p-3 rounded-lg border border-orange-200">
-                <p className="text-sm text-orange-800 font-medium mb-1">
-                  ⏰ Planifiez vos démonstrations
+              <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
+                <p className="text-sm text-blue-800 font-medium mb-1">
+                  ℹ️ Information
                 </p>
-                <p className="text-sm text-orange-700">
-                  Revenez pendant cette période pour utiliser toutes les fonctionnalités de traduction et synthèse vocale.
+                <p className="text-sm text-blue-700">
+                  Les fonctionnalités de traduction et synthèse vocale seront disponibles dès que le serveur sera remis en ligne.
                 </p>
               </div>
               
               <p className="text-xs text-gray-500 text-center">
-                Les serveurs seront automatiquement disponibles pendant cette période.
+                Nous vous remercions de votre patience.
               </p>
             </div>
           </AlertDialogDescription>
@@ -81,7 +78,7 @@ export function ServerScheduleDialog({ open, onOpenChange }: ServerScheduleDialo
         
         <AlertDialogFooter>
           <AlertDialogAction className="bg-blue-600 hover:bg-blue-700 text-white w-full">
-            J'ai noté la date
+            J'ai compris
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
